@@ -67,7 +67,7 @@
     <scope>runtime</scope>
 </dependency>
 
-	<!--  for zipkin
+	<!--  for zipkin-->
 		  	
 	
 		<dependency>
@@ -89,7 +89,7 @@
     <groupId>io.opentelemetry</groupId>
     <artifactId>opentelemetry-exporter-zipkin</artifactId>
 </dependency>
-   -->
+  
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

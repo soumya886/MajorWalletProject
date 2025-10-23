@@ -1,5 +1,7 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -20,14 +22,14 @@ private int userId;
 	@NotBlank(message = "User Name cant be blank/null")
 	@Column(unique = true)
 private String userName;
-	@NotBlank
+	@NotBlank()
 @Size(min = 8 , message  = "atleast should have 8 characters")
+
 private String password;
 	
 private String phoneNo;
 
 private String address;
-@Column(unique = true)
-@Email(message = "Email should be valid")
+
 private String email;
 }
